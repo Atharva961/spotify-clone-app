@@ -39,6 +39,13 @@ function App() {
         playlists: playlists,
       })
     })
+
+    spotify.getPlaylist('37i9dQZEVXcOuxYaJw3oTQ?si=2ccc1d6d1a854787').then(response => {
+      dispatch({
+        type: "SET_DISCOVER_WEEKLY",
+        discover_weekly: response
+      })
+    })
   }, []);
 
   return (

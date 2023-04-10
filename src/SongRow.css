@@ -1,0 +1,37 @@
+.songRow {
+    margin-left: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .songRow:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .songRow img {
+    margin-right: 20px;
+    height: 64px;
+    width: 64px;
+    object-fit: contain;
+  }
+  
+  .songRow__info {
+    flex-grow: 1;
+  }
+  
+  .songRow__info h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .songRow__info p {
+    font-size: 16px;
+    color: #b3b3b3;
+    margin: 0;
+    line-height: 1.2;
+  }
+  
