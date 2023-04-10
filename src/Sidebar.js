@@ -15,13 +15,12 @@ function Sidebar() {
             <SidebarOption title = "Search" Icon={SearchIcon}/>
             <SidebarOption title = "Your Library" Icon={LibraryMusicIcon}/>
             <br />
-            <strong className='sidebar__title'>PLAYLISTS</strong>
+            <strong className='sidebar__title'>PLAYLISTS </strong>
             <hr />
 
             {
-                // console.log("Displaying Playlists: ",playlists)
                 playlists?.items?.map((playlist) => {
-                    <SidebarOption title = {playlist.name} />
+                    return <SidebarOption title = {playlist.name} />
                 })
             }
         </div>
